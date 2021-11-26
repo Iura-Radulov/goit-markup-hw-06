@@ -51,7 +51,11 @@
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button data-modal-close class="close"></button>        
+                <button data-modal-close class="close">
+                <svg class="close-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+                </button>        
             </div>
         </div>
 
@@ -308,17 +312,22 @@
             </ul>
 
         </div>
-        <div class="signup">
-            <form name="signup-form">
-
-                <label>
+        
+            <form name="signup-form" class="signup">
+                <label for="email">
                     Подпишитесь на рассылку
-                    <input type="email" name="email">
                 </label>
-                <button type="submit">Подписаться</button>
+                <div>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <button type="submit">
+                    <span>Подписаться</span>
+                    <svg class="icon">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+                </div>
             </form>
             
-        </div>
         </div>
     </footer>
 
