@@ -58,10 +58,37 @@
                  </button> 
                 <h2 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form name="modal-signup" class="modal-signup">
-                <label>
-                Имя
-                <input type="text" name="username" placeholder=" ">
-                </label>    
+                <label class="form-label">
+                    <span>Имя</span>
+                <input type="text" name="username" class="form-input" placeholder=" "/>
+                <svg class="icon">
+                    <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                </label> 
+                <label class="form-label">
+                    <span>Телефон</span>
+                <input type="tel" name="phone_number" class="form-input" placeholder=" "/>
+                <svg class="icon">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                </label>
+                <label class="form-label">
+                    <span>Почта</span>
+                    <input type="email" name="email" class="form-input" placeholder=" "/>
+                <svg class="icon">
+                    <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                </label>
+                <label class="form-label">
+                    <span>Комментарий</span>
+                    <textarea name="comment" rows="8" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="form-checkbox">
+                    <input type="checkbox" class="checkbox">
+                   <span class="icon"></span>
+                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                </label>
+                <button type="submit" class="form-button">Отправить</button>
 
                 </form>
             </div>
